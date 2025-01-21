@@ -1,5 +1,9 @@
-// function sum(a,b) {
-//     return a + b;
-// }
+function fetchPromise() {
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("Peanut butter")
+        },1000);
+    })
+};
 
-// module.exports = sum;
+module.exports = fetchPromise;
